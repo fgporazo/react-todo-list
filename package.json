@@ -1,11 +1,11 @@
 {
-  "homepage": "https://fgporazo.github.io",
+  "homepage": "https://fgporazo.github.io/react-todo-list",
   "name": "my-first-react-js",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "preredeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
