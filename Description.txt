@@ -1,0 +1,68 @@
+What React is?
+
+-the library for web and native user interfaces
+-front-end framework
+-writing larger applications much easier
+-tool making front-end easier
+-declaring what your output is going to look like
+and react does the magic behind this
+
+Step1: Break UI into component hierarchy
+-what your final product look like
+-declarative programming = i want this specific thing
+
+Step2: 
+
+~~~
+
+ How to install React JS 
+
+ 1. npm create vite@latest
+ 2. type . (period) - this is going to create in whatever folder
+ you're currently in
+ 3. Choose 'react'
+ 3. Choose 'Javascript' or 'Javascript SWC' - much faster than regular JS
+ 4. npm i - to install dependencies
+ 5. npm run dev - to start up the application
+
+ ~~~
+
+React JS initial files
+
+-index and jsx hooking up with each other
+-function inside of react is a component
+
+~~~
+
+Errors
+
+1. Expected corresponding JSX closing tag for...
+-component inside react can return only one (1) element
+-solution:  > can wrap everything inside of a <div>
+            > can use fragment <> 
+            > a fragment is just an element
+            that has no tag at all / empty tag
+2. Cannot reassign to a varable declared with
+-useState() > a hook inside of react
+            > inside react you cannot update a state variable
+            > not allowed to change the value of state becuase it 
+            is imuutable 
+3. Warning: Each child in a list should have a unique "key" prop.
+-solution: > add key
+
+~~~
+
+props       = allows you to pass information down to custom component
+useEffect   = it doesn't return anything but it takes a function as its argument
+         
+Notes:
+
+* hooks should always put on top
+
+~~~
+
+How to deploy in github
+
+1. "deploy": "gh-pages -d dist" 
+        > *scripts
+        > Explanation: In my case, I was using Vite to create my React app. So by running npm run deploy, vite created a 'dist' folder for the production. But "deploy": "gh-pages -d build" is watching for the build folder. Now gh-pages will look for dist folder before deployment.
