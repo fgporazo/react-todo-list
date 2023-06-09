@@ -45,7 +45,6 @@ export default function App() {
 
 
   return (
-    <BrowserRouter basename='/index.html'>
     <>
       <NewTodoForm onSubmit={addTodo} />
       <h1 className="header">Todo List</h1>
@@ -54,7 +53,6 @@ export default function App() {
         toggleTodo={toggleTodo} 
         deleteTodo={deleteTodo} 
       />
-    </>
-    </BrowserRouter>
+  </>
   )
 }
